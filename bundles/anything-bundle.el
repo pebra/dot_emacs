@@ -187,6 +187,9 @@
 (require 'evil-surround)
 (global-evil-surround-mode 1)
 
+(require 'evil-commentary)
+(evil-commentary-mode 1)
+
 (require 'evil-visualstar)
 
 (defun fix-underscore-word ()
@@ -350,7 +353,7 @@ Repeated invocations toggle between the two most recently open buffers."
 (set-face-background hl-line-face "gray10")
 
 ;; Make lines longer than 80 highlighted
-(setq whitespace-line-column 80) ;; limit line length
+(setq whitespace-line-column 120) ;; limit line length
 (setq whitespace-style '(face lines-tail))
 (global-whitespace-mode t)
 
