@@ -350,7 +350,7 @@ Repeated invocations toggle between the two most recently open buffers."
 
 ;; Highlight cursor line
 (global-hl-line-mode t)
-(set-face-background hl-line-face "gray10")
+;; (set-face-background hl-line-face "gray10")
 
 ;; Make lines longer than 80 highlighted
 (setq whitespace-line-column 120) ;; limit line length
@@ -445,8 +445,8 @@ Repeated invocations toggle between the two most recently open buffers."
 ;; Custom Packages
 ;; =============================================================================
 
-(load "~/.emacs.d/vendor/ujelly-theme/ujelly-theme.el")
-(load-theme 'ujelly)
+;; (load "~/.emacs.d/vendor/ujelly-theme/ujelly-theme.el")
+;; (load-theme 'ujelly)
 
 ; (let ((bg (face-attribute 'default :background)))
 ;   (custom-set-faces
@@ -463,6 +463,9 @@ Repeated invocations toggle between the two most recently open buffers."
 
 (add-to-list 'load-path "~/.emacs.d/vendor/longlines/")
 (require 'longlines)
+
+(add-to-list 'load-path "~/.emacs.d/vendor/markdown-preview")
+(require 'markdown-preview-mode)
 
 (require 'elixir-mode)
 (add-to-list 'load-path "~/.emacs.d/vendor/alchemist.el")
